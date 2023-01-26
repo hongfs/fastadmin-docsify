@@ -1,0 +1,29 @@
+{
+    "name": "hongfs/fastadmin-docsify",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hongfs",
+            "email": "hong@hongfs.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "topthink/framework": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hongfs\\FastadminDocsify\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://gitee.com/fastadminnet/framework.git"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>{$config.title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/themes/vue.min.css" />
+    <!-- 代码高亮样式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" />
+    <style>
+        .markdown-section > p {
+            word-break: break-all;
+        }
+
+        .markdown-section code {
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        window.$docsify = {
+            // 名称
+            name: '{$config.title}',
+            // 侧边栏显示最大等级
+            maxLevel: 3,
+            // 文档文件地址
+            homepage: './api.md',
+            noEmoji: true,
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/docsify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</body>
+
+</html>
